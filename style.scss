@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #92b3a6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Amatic SC', cursive;
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+}
+
+h1{
+    font-size: 80px;
+    border-bottom: 2px solid black;
+
+}
+.grid{
+    display: grid;
+    place-content: center;
+    background-color: white;
+    margin: 1rem 0;
+    height: 600px;
+    width: 600px;
+    border: 5px solid rgb(203, 92, 32);
+}
+
+
+.slidecontainer{
+    padding: 20px 0;
+    align-items: center;
+    height: 30px;
+    align-items: center;
+    
+}
+
+
+.slider{
+    width: 60%;
+    
+}
+#slider-value{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.slidecontainer > input, p{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.settings{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.settings > span{
+    display: flex;
+    align-items: center;
+}
+
+input[type=color]:hover{
+    cursor: pointer;
+}
+input[type=color] {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    //overflow: hidden;
+}
+
+input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid lightseagreen;
+    border-radius:8px ;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    margin: 0 10px;
+    padding: 0 10px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+button.active{
+    background-color: rgb(203, 92, 32);
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none; 
+}
